@@ -1731,6 +1731,7 @@
       <div class="event-card reveal reveal-1">
         <p class="event-tag">Engagement</p>
         <p class="event-date">21 December</p>
+        <p class="event-time">12:00 PM</p>
         <div class="event-divider-sm"></div>
         <p class="event-venue">St. Thomas Mar Thoma Auditorium</p>
         <p class="event-address">Keezhvaipur</p>
@@ -1738,6 +1739,7 @@
       <div class="event-card reveal reveal-2">
         <p class="event-tag">Holy Matrimony</p>
         <p class="event-date">28 December</p>
+        <p class="event-time">10:30 AM</p>
         <div class="event-divider-sm"></div>
         <p class="event-venue">Thuruthicad Mar Thoma Church</p>
         <p class="event-address">Thuruthicadu</p>
@@ -1776,7 +1778,7 @@
       <p class="eyebrow dark reveal">Engagement Venue</p>
       <h2 class="reveal">St. Thomas Mar Thoma Auditorium</h2>
       <p class="venue-address reveal">Keezhvaipur, Mallappally</p>
-      <p class="venue-event reveal">Engagement &nbsp;·&nbsp; 21 December</p>
+      <p class="venue-event reveal">Engagement &nbsp;·&nbsp; 21 December &nbsp;·&nbsp; 12:00 PM</p>
       <div class="venue-map-frame reveal">
         <iframe src="https://www.google.com/maps?q=9.4192316,76.6746649&output=embed"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="St. Thomas Mar Thoma Auditorium Map"
@@ -1792,7 +1794,7 @@
       <p class="eyebrow dark reveal">Wedding Venue</p>
       <h2 class="reveal">Thuruthicad Mar Thoma Church</h2>
       <p class="venue-address reveal">Thuruthicadu</p>
-      <p class="venue-event reveal">Holy Matrimony &nbsp;·&nbsp; 28 December</p>
+      <p class="venue-event reveal">Holy Matrimony &nbsp;·&nbsp; 28 December &nbsp;·&nbsp; 10:30 AM</p>
       <div class="venue-map-frame reveal">
         <iframe src="https://www.google.com/maps?q=Thuruthicad+Mar+Thoma+Church,+Thuruthicadu&output=embed"
           loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Wedding venue map"
@@ -1955,8 +1957,8 @@
       tapBtn.setAttribute('aria-hidden', 'false');
 
       // ---- Countdown ----
-      // No year or time was supplied: counts down to the start of 28 December of the current year (IST).
-      var target = new Date(new Date().getFullYear() + '-12-28T00:00:00+05:30').getTime();
+      // Counts down to 28 December 10:30 AM of the current year (IST).
+      var target = new Date(new Date().getFullYear() + '-12-28T10:30:00+05:30').getTime();
       var elD = document.getElementById('cd-d'),
         elH = document.getElementById('cd-h'),
         elM = document.getElementById('cd-m'),
